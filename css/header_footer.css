@@ -1,0 +1,370 @@
+/* ==========================HEADER================== */
+/* =======HEADER//PART_ONE========= */
+.part_one{
+    background: var(--colorone);
+}
+
+
+.contener{
+    width:70%;
+    margin: 0 auto;
+    /* height: 100%; */
+}
+.links, .money_type{
+    display: inline-block;
+    width: 50%;
+}
+.money_type{
+    float: right;
+    text-align: right;
+}
+.links a{
+    padding-right: 3%;
+    color: white;
+}
+.money_type a{
+    padding-left:3%;
+    padding-right: 0.5%;
+    color: white;
+}
+.money_type select{
+    background: var(--colorthree);
+    border: none;
+    outline: 0;
+    cursor: pointer;
+}
+.money_type option{
+    background: var(--colorthree);
+}
+.part_one i{
+    padding-right: 1%;
+    font-size: 18px;
+    color: var(--colorthree);
+}
+
+/* =======HEADER//PART_TWO========= */
+.part_two{
+    background: var(--colortwo);
+    height: 107px;
+    border-bottom: 5px solid var(--colorthree);
+    position: relative;
+}
+.part_two h1{
+    margin: 0;
+    width: 25%;
+    color: white;
+}
+.part_two .contener{
+    padding-top: 2.1%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    background: var(--colortwo);
+}
+.links_two{
+    width: 30%;
+    text-align: right;
+    padding-right: 0.5%;
+    padding-top: 1.5%;
+}
+.search_part{
+    width: 40%;
+    text-align: center;
+    padding-top: 1.2%;
+}
+.search_part input, .search_part button{
+    font-size: 17px;
+    outline: 0;
+    border-radius: 50px 0 0 50px;
+    padding: 2%;
+    border: 1px solid rgba(133, 131, 131, 0.514);
+    color: var(--colortwo);
+}
+.search_part button{
+    border-radius: 0 50px 50px 0;
+    background: var(--colorthree);
+}
+.search_icon{
+    display: none;
+}
+.links_two a{
+    padding: 3%;
+    padding-bottom: 0;
+    color: white;
+}
+.hidden_bars{
+    display: none;
+}
+.links_two i{
+    padding-right: 1%;
+}
+
+.shadow{
+    background: rgba(0, 0, 0, 0.425);
+    width:100%;
+    height: 100%;
+}
+    .cart_icon{
+        position: relative;
+        padding-right: 5px;
+    }
+    .show_cart{
+        position: absolute;
+        top:-20px;
+        right: 0px;
+        color:red;
+        padding: 2px;
+        background-color: #fff;
+        border-radius: 50%;
+    }
+    .wish_contaner{
+        position: relative;
+    }
+    .show_wish{
+        position: absolute;
+        top:-20px;
+        right: 0px;
+        color:red;
+        padding: 2px;
+        background-color: #fff;
+        border-radius: 50%;
+    }
+/* =======HEADER//PART_THREE========= */
+.part_three{
+    height: 50px;
+    padding-top: 0.8%;
+    border-bottom: 3px solid rgba(177, 170, 170, 0.514);
+}
+.part_three a{
+   padding-right: 1.5%;
+    color:var(--colortwo);
+}
+.part_three a:hover{
+    color: var(--colorthree);
+}
+.active:hover{
+    color: var(--colorthree);
+}
+
+/* MEDIA FOR HEADER */
+
+@media (max-width:1107px){
+    .contener{
+        width: 80%;
+    }
+    .part_two .contener{
+        padding-top: 2.5%;
+        
+    }
+}
+@media (max-width:970px){
+    .part_one{
+        font-size: 14px;
+    }
+    .contener{
+        width: 90%;
+    }
+    .part_two .contener{
+        padding-top: 3.5%;
+    }
+    .hidden_one{
+        display: none;
+    }
+    .links_two i{
+        font-size: 25px;
+    }
+    .links_two{
+        width: 20%;
+    }
+    .search_part{
+        width: 50%;
+    }
+    .show_cart{
+      
+        top:-4px;
+        right: 7px;
+        font-size: 20px;
+        background-color: unset;
+       
+    }
+    .show_wish{
+        top:-2px;
+        right: 6px;
+        font-size: 20px;
+
+        background-color:unset;
+    }
+}
+@media (max-width:724px){
+    .hidden_two{
+        display: none;
+    }
+    .money_type{
+        width: 80%;
+    }
+    .links{
+        width:20%
+    }
+    .links a{
+        padding-right: 15%;
+    }
+    .contener{
+        width: 98%;
+    }
+    .links_two i{
+        font-size: 25px;
+    }
+    .part_three a{
+        padding-left: 1.5%;
+    }
+
+}
+@media (max-width:613px){
+    .search_part{
+        display: none;
+       position: fixed;
+       top: 150px;
+       width: 100%;
+       z-index: 9999999999999;
+
+    }
+    .search_icon{
+        display: inline-block;
+        font-size: 25px;
+    }
+    .links_two a{
+        padding-left: 8%;
+    }
+    .links_two{
+        width: 50%;
+        padding-top: 0;
+    }
+    .part_two h1{
+        width: 50%;
+    }
+}
+@media (max-width:544px){
+    .part_three{
+        width:100%;
+        height: 79.15vh;
+        position: fixed;
+        background: black;
+        z-index: 1000; 
+         display: none;
+         bottom: 0;
+    }
+    .part_three .contener a{
+        display: block;
+        color:white;
+        text-align: center;
+        padding: 4% 0;
+        border-bottom: 2px solid var(--colorthree);
+    }
+    .part_three .contener a:hover{
+        color: var(--colorthree);  
+        border-bottom: 2px solid var(--colorone);
+
+    }
+    .part_two{
+        height: 130px;
+       
+    }
+    .part_two .contener{
+        flex-wrap: wrap;
+    }
+    .part_two h1{
+        display: inline-block;
+        width: 100%;
+        height: 50%;
+        text-align: center;
+    }
+    .hidden_bars{
+        display: inline-block;
+    }
+    .links_two{
+        width:100%;
+        height: 50%;
+        text-align: center;
+        color: white;
+    }
+    .show_cart{
+        
+        right: 10px;
+       
+    }
+    .show_wish{
+        
+        right: 10px;
+        
+    }
+}
+
+
+
+
+
+
+/* ===================FOOTER======================== */
+footer{
+    background: var(--colortwo);
+    margin-top: 1%;
+}
+footer .contener{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+    color:white;
+    padding: 2% 0;
+}
+footer ul{
+    width: 24%;
+    list-style-type: none;
+    padding: 0;
+   
+}
+
+footer li{
+    margin-top: 7%;
+    font-size: 14px;
+}
+footer li:first-child{
+    color: red;
+    font-size: 18px;
+}
+
+footer a{
+    color:white;
+}
+footer a:hover{
+    color:var(--colorthree);
+}
+ul i{
+    color:var(--colorthree);
+}
+footer > .contener > a{
+    margin: 0 auto;
+    margin-top: 5%;
+        
+}
+@media (max-width:811px){
+    footer .contener{
+        justify-content: space-around;
+    }
+    footer ul{
+        width: 45%;
+        border-bottom: 2px solid  rgba(177, 170, 170, 0.514);
+    }
+    footer li{
+        margin-bottom: 5%;
+    }
+}
+@media (max-width:415px){
+    footer li{
+        font-size: 11.5px;
+    }
+    footer > .contener > a{
+        left: 36%;
+            
+    }
+}

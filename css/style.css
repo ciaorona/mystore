@@ -1,0 +1,258 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap");
+@import 'product_style.css';
+@import 'header_footer.css';
+@import 'cart.css';
+@import 'login.css';
+@import 'profile.css';
+@import 'jquery.exzoom.css';
+:root {
+  --colorone: rgb(46, 46, 46);;
+  --colortwo: black;
+  --colorthree: red;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0px;
+}
+*{
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+/* ===============================MAIN_COLLECTION=========================== */
+.main_content > .contener{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 6%;
+}
+.collection{
+    width:31%;
+    height: 210px;
+    position: relative;
+    overflow: hidden;
+}
+.collection  img{
+    width: 100%;
+    height: 100%;
+}
+.content_collection{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background:rgba(255, 0, 0,0.7);
+    clip-path: polygon(0 0, 90% 0, 20% 100%, 0 100%);
+    height: 100%;
+    width: 100%;
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+    padding: 3%;
+}
+.collection img:hover {
+    transform: scale(1.2,1.2);
+    transition-duration: 2s;
+}
+@media (max-width:860px){
+    .collection{
+        width:48%;
+        margin-top: 4%;
+    }
+    .main_content > .contener{
+        justify-content: space-around;
+    }
+}
+@media (max-width:550px){
+    .collection{
+        width:90%;
+        margin-top: 5%;
+    }
+}
+
+/* ================CCATEGORIES================ */
+.categories{
+    margin-top: 5%;
+}
+.categories .contener{
+    display: flex;
+    justify-content: space-between;
+}
+.categories span{
+    font-size: 30px;
+    font-weight: bold;
+}
+.text_categories{
+    width:370px;
+    margin-top: 0.7%;
+}
+
+    .active{
+        color:rgb(255, 0, 0) !important;
+        border-bottom:2px solid red;
+    }
+
+.text_categories a{
+    margin-left: 2%;
+    color: black;
+}
+.text_categories a:hover{
+    color: red;
+}
+@media (max-width:684px){
+    .categories .contener{
+        flex-wrap: wrap;
+    }
+    .categories span{
+        width:100%;
+        text-align: center;
+    }
+    .text_categories{
+        margin-top: 1.5%;
+        width:100%;
+        text-align: center;
+    }
+    .text_categories a{
+        margin-left: 1%;
+    }
+}
+
+@media (max-width: 429px){
+    .text_categories a{
+        margin-left: 2%;
+        font-size: 13px;
+    }
+    .categories span{
+        font-size: 25px;
+    }
+}
+/* =========================================PRODUCTS_CARDS=============================== */
+.products_card .contener{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top:2%;
+}
+.card{
+    width: 23%;
+    height: 450px;
+    text-align: center;
+    line-height: 13px;
+    margin-top: 4%;
+    z-index: 1;
+    position: relative;
+    background-color: white;
+}
+.product_img{
+    width: 100%;
+    height: 40%;
+    overflow: hidden;
+}
+.card img{
+    width: 100%;
+    height: 100%;
+}
+.card img:hover {
+    transform: scale(1.1,1.1);
+    transition-duration: 0.6s;
+}
+fieldset{
+    padding:0px;
+    border-bottom: 0;
+    border-left: 0;
+    border-right: 0;
+    border-top: 1px solid gray;
+}
+.content_card{
+    margin-bottom: 8%;
+}
+legend i{
+    color: red;
+}
+.product_icon i{
+    padding: 3% 11%;
+    background: red;
+    margin-top: 12%;
+    font-size: 20px;
+}
+.product_icon .add_card{
+padding: 3% 0%;
+}
+.product_icon i:hover{
+    background: black;
+    color: red;
+}
+.dropdown{
+    background: var(--colortwo);
+    height: 10%;
+    margin-top: 6%;
+    justify-content: center;
+    align-items: center; 
+    display:none;
+    border-radius: 4%;
+    z-index: -1;
+    position: relative;  
+} 
+.card:hover .dropdown{
+    animation: dropdown 0.6s ;
+    display: flex;
+}
+@keyframes dropdown{
+   0%{
+    transform: translateY(-100px);
+    opacity: 0;
+   
+   }
+   40%{
+       opacity: 0;
+       
+   }
+   100%{
+    transform:translateY(0);
+    opacity: 1;
+    
+}
+}
+.add_card {
+    background: var(--colorthree);
+    padding:4% 0;
+    width:80%;
+}
+.add_card a{
+    color:white;
+}
+@media (max-width:1328px){
+    .card{
+        width: 31%;
+    }
+}
+@media (max-width:829px){
+    .card{
+        width: 42%;
+    }
+}
+@media (max-width:569px){
+    .card{
+        width:70%;
+    }
+}
+@media (max-width:400px){
+    .card{
+        width:85%;
+    }
+}
+/* =================SOCIAL_ICONS============== */
+.social_icons{
+    margin-top: 10%;
+    text-align: center;
+}
+.social_icons a{
+    color:black;
+    font-size: 30px;
+    margin-left: 2%;
+}
+.social_icons  a:hover{
+    color: red;
+}

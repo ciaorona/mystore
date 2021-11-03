@@ -1,0 +1,115 @@
+.profile-page .contener {
+
+    display: flex;
+    flex-wrap: wrap;
+}
+.profile-contact{
+width: 35%;
+padding: 20px;
+box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.2);
+position: relative;
+}
+.contact-content .profile_img{
+    width:230px ;
+    height: 230px;
+    margin: 0px auto;
+    border-radius: 100%;
+    overflow: hidden;
+}
+.contact-content img{
+    width: 100%;
+    height: 100%;
+}
+.contact-content h1{
+    margin-bottom: 0;
+    text-transform: capitalize;
+
+}
+
+.contact-content p{
+
+    padding-left: 20px;
+
+}
+.contact-content i{
+    padding-right: 10px;
+    color: var(--colorthree);
+}
+
+.sold-products{
+    width: 60%;
+
+}
+.sold-content{
+    padding: 20px 30px;
+}
+.sold-cards{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.sold-card{
+    width: 48%;
+    height: 250px;
+    margin-bottom: 40px;
+    box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.2);
+    padding-bottom: 10px;
+    border-radius: 10px;
+
+}
+.sold-card img{
+    width: 100%;
+    height: 90%;
+}
+.sold-card p{
+    margin: 0;
+    padding-left: 15px;
+    text-align: center;
+}
+
+.settings-button{
+    background-color: var(--colorthree);
+    text-align: right;
+    padding: 10px 20px;
+    border-radius: 20px;
+    position: absolute;
+    right: 20px;
+    font-size: 13px;
+    color: black;
+}
+.add{
+    width: 60%;
+    margin: 50px auto;
+}
+.add .link{
+    float: right;
+}
+.add form{
+    width: 80%;
+    margin: 0 auto;
+}
+.add .contener
+.view_all .contener{
+    margin: 0;
+    
+}
+.add .contener{
+    margin-bottom: 100px;
+}
+.readonly{
+    cursor:not-allowed !important ;
+    
+}
+
+.input textarea{
+
+    display: block;
+    padding: 1% 1%;
+    font-size: 16px;
+    outline: 0;
+    width: 80%;
+    margin: 2% 10%;
+    border: 1px solid var(--colorthree);
+    border-radius: 10px;
+}
